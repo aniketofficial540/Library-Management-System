@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple CRM</title>
+    <link rel="stylesheet" href="style11.css">
+</head>
+
+<body class="body">
+    <header>
+        <div class="logo">
+            <img class="tulas-logo" src="Tulas_Logo.webp" alt="Tula's Logo">
+        </div>
+        <nav>
+
+        </nav>
+        <div class="logo">
+            <img class="tulas-logo" src="naaclogo.webp" alt="Tula's Logo">
+        </div>
+        <nav></nav>
+        <div class="logo">
+            <img class="tulas-logo" src="Nbalogo.png" alt="Tula's Logo">
+        </div>
+        <nav></nav>
+
+        <div class="header-actions">
+            <button style="color: black;" onclick="downloadCSV()">Download All</button>
+            <button class="user-icon">👤</button>
+        </div>
+    </header>
+    <main class="table-container">
+        <table id="logTable">
+            <div class="form-container">
+                <form id="entryForm">
+                    <label for="collegeId">Enter College ID:</label>
+                    <input type="text" id="collegeId" name="collegeId" required>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+
+            <br>
+
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>College ID</th>
+                    <th>Date</th>
+                    <th>In Time</th>
+                    <th>Out Time</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Additional rows... -->
+            </tbody>
+        </table>
+    </main>
+    <div class="download-buttons">
+        <!-- <label for="logDate">Select Date (optional):</label>
+        <input type="date" id="logDate"> -->
+        <button onclick="downloadCSV()">Download</button>
+    </div>
+</body>
+
+</html>
